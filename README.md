@@ -69,7 +69,10 @@ If you are using the last versions of delayed_job gem you can see the following 
 Error while reserving job: undefined class/module User
 ```
 
-To fix it move the user.rb file to lib/tasks/user.rake (user.rb should be renamed to user.rake) or add the path to user.rb in Rakefile.
+To fix it move the user.rb file to lib/tasks/user.rake (user.rb should be renamed to user.rake) or add the path to user.rb in Rakefile:
+```ruby
+require File.expand_path('path_to_user.rb', __FILE__)
+```
 
 # Demo Rails Application
 
