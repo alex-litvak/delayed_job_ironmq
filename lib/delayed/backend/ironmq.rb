@@ -108,11 +108,11 @@ module Delayed
           @msg.id if @msg
         end
 
-        private
-
         def queue_name
           "#{@queue_name}_#{@attributes[:priority] || 0}"
         end
+
+        private      
 
         def ironmq
           ::Delayed::Worker.ironmq
