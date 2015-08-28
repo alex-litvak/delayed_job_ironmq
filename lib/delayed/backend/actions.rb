@@ -64,8 +64,8 @@ module Delayed
 
         def queue_name(priority)
           puts 'test'
-          puts Delayed::Backend::Ironmq::Job.queue_name
-          Delayed::Backend::Ironmq::Job.queue_name
+          #puts Delayed::Backend::Ironmq::Job.queue_name
+          Delayed::Backend::Ironmq::Job.queue_namee
         end
       end
     end
