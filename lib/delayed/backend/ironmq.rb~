@@ -110,7 +110,7 @@ module Delayed
 
         def queue_name
           "#{@queue_name}_#{@attributes[:priority] || 0}"
-        end 
+        end
 
         private      
 
